@@ -45,7 +45,7 @@ def _solve_verbose(stdscr, boards, strategies):
     return solved, was_solved
 
 if __name__ == "__main__":
-    boards = parse_file("sudoku_bank/medium.txt")
+    boards = parse_file("sudoku_bank/sudoku-exchange-puzzle-bank/medium.txt")
     strategies = [SmarterBruteForce()]
     smarter_strategies = [CompositeStrategy([EliminateSingletonsStrategy(), SoleCandidatesStrategy()])]
     bf_start = time.time()
